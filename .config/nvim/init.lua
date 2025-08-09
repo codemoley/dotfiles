@@ -37,7 +37,9 @@ require("lazy").setup({
             "markdown",
             "rust",
             "go",
-            "python"
+            "python",
+            "c",
+            "cpp"
           },
           sync_install = false,
           auto_install = true,
