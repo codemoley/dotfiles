@@ -58,7 +58,7 @@ require("lazy").setup({
 })
 
 --- LSP CONFIG ---
-vim.lsp.enable({ "lua_ls", "rust_analyzer", "clangd" })
+vim.lsp.enable({ "lua_ls", "basedpyright", "clangd" })
 
 --- KEYMAPS ---
 -- set leaders

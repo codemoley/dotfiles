@@ -1,8 +1,8 @@
 theme = GruvboxDark
 font-family = JetBrainsMono Nerd Font
 font-size = 14
-window-padding-x = 5
-window-padding-y = 5
+window-padding-x = 20
+window-padding-y = 10,0
 mouse-hide-while-typing = true
 window-decoration = none
 
