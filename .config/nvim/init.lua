@@ -102,38 +102,23 @@ vim.keymap.set("n", "<leader>xQ", "<CMD>Trouble qflist toggle<CR>")
 -- set colourscheme
 vim.cmd("colorscheme gruvbox")
 
--- line numbers
-vim.o.number = true
+vim.o.number = true        -- line numbers
 vim.o.relativenumber = true
 
--- set tab size to 2 spaces
-vim.o.tabstop = 2
+vim.o.tabstop = 2          -- set tab size to 2 spaces
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.autoindent = true
 
--- search settings
-vim.o.ignorecase = true
+vim.o.ignorecase = true    -- search settings
 vim.o.smartcase = true
 vim.o.hlsearch = false
 vim.o.incsearch = true
-
--- visual settings
-vim.o.termguicolors = true
-
--- highlight cursor
-vim.o.cursorline = true
-
--- Enable break indent
-vim.o.breakindent = true
-
--- Save undo history
-vim.o.undofile = true
-
--- DeCRease update time
-vim.o.updatetime = 250
-
--- DeCRease mapped sequence wait time
-vim.o.timeoutlen = 300
+vim.o.termguicolors = true -- visual settings
+vim.o.cursorline = true    -- highlight cursor
+vim.o.breakindent = true   -- Enable break indent
+vim.o.undofile = true      -- Save undo history
+vim.o.updatetime = 250     -- Decrease update time
+vim.o.timeoutlen = 300     -- Decrease mapped sequence wait time
