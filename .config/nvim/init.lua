@@ -21,7 +21,6 @@ require("lazy").setup({
   spec = {
     { "ellisonleao/gruvbox.nvim",      priority = 1000,       config = true,  opts = ... },
     { "neovim/nvim-lspconfig" },
-    { "windwp/nvim-autopairs",         event = "InsertEnter", config = true },
     { "nvim-telescope/telescope.nvim", tag = "0.1.8" },
     { "nvim-lua/plenary.nvim" },
     { "nvim-tree/nvim-web-devicons" },

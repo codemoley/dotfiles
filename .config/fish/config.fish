@@ -5,8 +5,12 @@ end
 # C++
 alias cpp="clang++ -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion"
 
-#launch starship
+# neovim
+alias vim="nvim"
+alias vi="nvim"
+
+# launch starship
 starship init fish | source
 
-#launch zoxide
+# launch zoxide
 zoxide init fish | source
