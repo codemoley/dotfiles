@@ -19,12 +19,12 @@ vim.opt.rtp:prepend(lazypath)
 -- choose plugins
 require("lazy").setup({
   spec = {
-    { "ellisonleao/gruvbox.nvim",      priority = 1000,       config = true,  opts = ... },
+    { "ellisonleao/gruvbox.nvim",      priority = 1000, config = true,  opts = ... },
     { "neovim/nvim-lspconfig" },
     { "nvim-telescope/telescope.nvim", tag = "0.1.8" },
     { "nvim-lua/plenary.nvim" },
     { "nvim-tree/nvim-web-devicons" },
-    { "folke/trouble.nvim",            opts = {},             CMD = "Trouble" },
+    { "folke/trouble.nvim",            opts = {},       CMD = "Trouble" },
     {
       "nvim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
@@ -52,6 +52,17 @@ require("lazy").setup({
         })
       end
     },
+    {
+      "S1M0N38/love2d.nvim",
+      event = "VeryLazy",
+      version = "2.*",
+      opts = {},
+      keys = {
+        { "<leader>v",  ft = "lua",          desc = "LÖVE" },
+        { "<leader>vv", "<cmd>LoveRun<cr>",  ft = "lua",   desc = "Run LÖVE" },
+        { "<leader>vs", "<cmd>LoveStop<cr>", ft = "lua",   desc = "Stop LÖVE" },
+      },
+    }
   },
   checker = { enabled = true },
 })
@@ -101,17 +112,17 @@ vim.keymap.set("n", "<leader>xQ", "<CMD>Trouble qflist toggle<CR>")
 -- set colourscheme
 vim.cmd("colorscheme gruvbox")
 
-vim.o.number = true        -- line numbers
+vim.o.number = true -- line numbers
 vim.o.relativenumber = true
 
-vim.o.tabstop = 2          -- set tab size to 2 spaces
+vim.o.tabstop = 2 -- set tab size to 2 spaces
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.autoindent = true
 
-vim.o.ignorecase = true    -- search settings
+vim.o.ignorecase = true -- search settings
 vim.o.smartcase = true
 vim.o.hlsearch = false
 vim.o.incsearch = true
